@@ -12,6 +12,7 @@ import top.fyl.springboot.configure.entity.User;
 @RestController
 @RequestMapping("/users")
 public class UserController {
+    // 注意
     @PostMapping
     public String createUser(@Valid @RequestBody User user) {
         return "用户通过！";
